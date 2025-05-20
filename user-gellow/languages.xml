@@ -6,7 +6,7 @@
 			<file name="languages.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/languages.xml" />
 		</update>
 	</info>
-	<element name="Portugues caralho" type="Language" source="Faleria" id="ID_LANGUAGE_PORTUGUESE">
+	<element name="Portugues" type="Language" source="Faleria" id="ID_LANGUAGE_PORTUGUESE">
 		<supports>Standard</supports>
 		<description>
 			<p>Typically spoken by Tuguinhas.</p>
