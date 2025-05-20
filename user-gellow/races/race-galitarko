@@ -3,7 +3,7 @@
 	<info>
 		<name>Galitarko</name>
 		<update version="0.0.1">
-			<file name="race-halfelf.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/races/race-halfelf.xml" />
+			<file name="race-galitarko.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/races/race-galitarko" />
 		</update>
 	</info>
 	<element name="Galitarko" type="Race" source="Faleria" id="ID_RACE_GALITARKO">
