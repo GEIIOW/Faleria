@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <index>
 	<info>
-		<name>Your Content</name>
+		<name>Faleria</name>
 		<update version="1.0.0">
-			<file name="user-yourname.index" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname.index" />
+			<file name="user-gellow.index" url="https://github.com/GEIIOW/Faleria/blob/master/user-gellow.index" />
 		</update>
 	</info>
 	<files>
