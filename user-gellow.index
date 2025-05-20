@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>Faleria</name>
-		<update version="1.0.0">
-			<file name="user-gellow.index" url="https://github.com/GEIIOW/Faleria/blob/master/user-gellow.index" />
+		<description>Something nice for my DM.</description>
+		<update version="0.0.1">
+			<file name="user-gellow.index" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow.index" />
 		</update>
 	</info>
 	<files>
-		<file name="file1.xml" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname/file1.xml" />
-		<file name="file2.xml" url="https://raw.githubusercontent.com/yourgithubaccount/repositoryname/master/user-yourname/file2.xml" />
+		<file name="languages.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/languages.xml" />
 	</files>
 </index>
+
