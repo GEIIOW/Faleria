@@ -8,7 +8,12 @@
 	</info>
 	<element name="Galitarko" type="Race" source="Faleria" id="ID_RACE_GALITARKO">
 		<description>
-			<p class="flavor">"My role as Gran Caster of the Silvermace Empire makes me one of the most influential men in our world. All my wishes are met, save for unlimited live subjects for my experiments. So, it was a great shock once I entered our soon to be new territory of Issadrem and found myself at the mercy of others. My prowess couldn’t be openly displayed for fear of being discovered in enemy territory, so I went from town to town looking for the kindness of strangers. I came to this land to see if their spiritual attunement would result in any difference presenting in their souls. In one of these villages I met Master Sur’Tzen, a galitarko that gave me a roof and a bowl fulll of food, along with invaluable wisdom. He told me that our soul, pure or evil, is like a cup of water. Emotions fill half the cup and logic fills the other half, but alone none quench our souls’ thirst. At that table my greatest setback was resolved. I had been looking for souls but never knew just how to locate them. I shall return to Evalnar at once."</p>
+			<p class="flavor">"My role as Gran Caster of the Silvermace Empire makes me one of the most influential men in our world. All my wishes are met, 
+			save for unlimited live subjects for my experiments. So, it was a great shock once I entered our soon to be new territory of Issadrem and found myself at the mercy of others. My prowess couldn’t be 
+			openly displayed for fear of being discovered in enemy territory, so I went from town to town looking for the kindness of strangers. I came to this land to see if their spiritual attunement would result in any
+			 difference presenting in their souls. In one of these villages I met Master Sur’Tzen, a galitarko that gave me a roof and a bowl fulll of food, along with invaluable wisdom. He told me that our soul, pure or evil, is 
+			 like a cup of water. Emotions fill half the cup and logic fills the other half, but alone none quench our souls’ thirst. At that table my greatest setback was resolved. I had been looking for souls but never knew just how to locate them.
+			  I shall return to Evalnar at once."</p>
 			<h4>GALITARKO TRAITS</h4>
 			<p>Galitarkos seem to be born with an assortment of abilities.</p>
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong>Your Strength score increases by 2.</p>
@@ -20,6 +25,15 @@
 			<p class="indent"><strong><em>Bearable.</em></strong>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 			<p class="indent"><strong><em>Mortal subtype.</em></strong>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
 		</description>
+		    <sheet display="false" />
+    	<setters>
+      		<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+      		<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+      		<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+      		<set name="names-format">{{name}} {{surname}}</set>
+      		<set name="height" modifier="2d10">4'8"</set>
+      		<set name="weight" modifier="2d4">110 lb.</set>
+    	</setters>
 		<rules>
 			<stat name="charisma" value="2" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK"/>
 			<select type="Racial Trait" name="Ability Score Increase (Half-Elf)" supports="Half-Elf" number="2" requirements="!ID_WOTC_WGTE_GRANTS_DARKMARKED,!ID_INTERNAL_GRANTS_DRAGONMARK"/>
