@@ -143,7 +143,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Common" count="3" />
+			<select type="Language" name="Languages1" supports="Common" />
+			<select type="Language" name="Languages2" supports="Common" />
+			<select type="Language" name="Languages3" supports="Common" />
 		</rules>
 	</element>
 

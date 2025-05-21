@@ -24,9 +24,23 @@
 		</description>
 		<setters>
 			<set name="common">true</set>
-			<set name="speakers">Human, Elf, Lenam, Aarakocra, Genasi, Centaur, Goliath;</set>
+			<set name="speakers">Human, Elf, Lenam, Aarakocra, Genasi, Centaur, Goliath</set>
 			<set name="script">Adelon</set>
 		</setters>
 	</element>
+
+	</element>
+		<element name="Gnish" type="Language" source="Faleria" id="ID_LANGUAGE_GNISH">
+		<supports>Common</supports>
+		<description>
+			<p>Common Tongue of Gnawland</p>
+		</description>
+		<setters>
+			<set name="common">true</set>
+			<set name="speakers">Gnoll, Minotaur, Aarakocra, Genasi, Galitarko, Orc, Goblin</set>
+			<set name="script">Askresh</set>
+		</setters>
+	</element>
+
 
 </elements>
