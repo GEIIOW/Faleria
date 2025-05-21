@@ -198,7 +198,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Common" requirements="!ID_LANGUAGE_IXALI" />
+			<select type="Language" name="Languages" supports="Common" />
 		</rules>
 	</element>
 
