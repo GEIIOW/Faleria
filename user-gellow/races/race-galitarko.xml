@@ -75,7 +75,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Galitarko Mortal subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
+	<element name="Galitarko Mortal Subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
 		<description>
 			<p>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
 		</description>
@@ -87,7 +87,7 @@
 	
 	
 	<!--subtypes-->
-	
+	<!--Grizzly-->
 	<element name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
 		<supports>Galitarko</supports>
 		<description>
@@ -110,7 +110,6 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
 		</rules>
 	</element> 	
-
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
@@ -119,7 +118,6 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 	</element>
-
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
@@ -128,7 +126,6 @@
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>
 	</element>
-
 	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
@@ -137,7 +134,6 @@
 			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
 	</element>
-
 	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES">
 		<description>
 			<p>You can speak, read and write three languages of your choice.</p>
@@ -148,5 +144,58 @@
 		</rules>
 	</element>
 
+	<!--Panda-->
+	<element name="Panda Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_PANDA">
+		<supports>Galitarko</supports>
+		<description>
+			<p>The panda galitarko wear a resemblance to either giant, qinling or red pandas. Natural of Issadrem, these spot furred mortals are known for their selflessness. Followers of the Iendu philosophy, that teaches you to follow the path to self improvement and communal harmony. They protect their lands and those of others even if that means taking up arms.Panda galitarko follow the naming convention that’s prevalent in Issadrem, with two different parts separated by an apostrophe. The first part functions as a one syllable family name and the second as a name for each person. Examples of this naming convention are ones such as Sur’Tzen, Gar’Meren, Pol’Jalgoren and Gra’Cious.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>High Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Bearfriend.</em></strong> You have advantage on Charisma (Persuasion) checks.</p>
+			<p class="indent"><strong><em>Roll-up.</em></strong> If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARFRIEND" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROLLUP" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES2" />
+		</rules>
+	</element> 	
+	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
+		<description>
+			<p>You have a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a climbing speed equal to your walking speed.</description>
+		</sheet>
+	</element>
+	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
+		<description>
+			<p>You have advantage on Charisma (Persuasion) checks.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on Charisma (Persuasion) checks.</description>
+		</sheet>
+	</element>
+	<element name="Roll-up" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ROLLUP">
+		<description>
+			<p>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</p>
+		</description>
+		<sheet display="false">
+			<description>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</description>
+		</sheet>
+	</element>
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES2">
+		<description>
+			<p>You can speak, read and write Ixali and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Languages" supports="Standard" />
+		</rules>
+	</element>
 
 </elements>
