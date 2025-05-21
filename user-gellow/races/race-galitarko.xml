@@ -37,7 +37,6 @@
     	</setters>
 		<rules>
 			<stat name="strength" value="2"/>
-			<select type="Racial Trait" name="Ability Score Increase (Galitarko)" supports="Galitarko" number="2"/>
 			<stat name="innate speed" value="30" bonus="base"/>
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
