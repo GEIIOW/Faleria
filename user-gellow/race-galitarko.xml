@@ -38,7 +38,6 @@
 		<rules>
 			<stat name="strength" value="2"/>
 			<stat name="innate speed" value="30" bonus="base"/>
-			<stat name="innate speed:climb" value="30" bonus="base"/>
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
@@ -119,7 +118,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="innate speed:climb" value="30" bonus="base"/>
+		<stat name="speed:climb" value="speed" bonus="racial"/>
 		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
