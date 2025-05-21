@@ -192,13 +192,13 @@
 			<description>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</description>
 		</sheet>
 	</element>
-	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES2" requirements="!ID_LANGUAGE_IXALI" >
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES2" >
 		<description>
 			<p>You can speak, read and write Ixali and one other language of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Standard" />
+			<select type="Language" name="Languages" supports="Common" requirements="!ID_LANGUAGE_IXALI" />
 		</rules>
 	</element>
 
