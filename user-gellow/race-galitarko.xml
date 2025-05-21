@@ -118,7 +118,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="speed:climb" value="speed" bonus="base"/>
+		<stat name="innate speed:climb" value="speed" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
@@ -177,6 +177,9 @@
 		<sheet display="false">
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
+		<rules>
+		<stat name="innate speed:climb" value="speed" bonus="base"/>
+		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
 		<description>
@@ -203,5 +206,67 @@
 			<select type="Language" name="Languages" supports="Common" restrict="-Ixali"/>
 		</rules>
 	</element>
+
+	<!--Polar-->
+	<element name="Polar Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_POLAR">
+		<supports>Galitarko</supports>
+		<description>
+			<p>The polar galitarko wear a resemblance to polar bears. Natural to Nyjörsa, these mortals are followers of the Stengul philosophy, that teaches you to first take care of yourself and your closest allies and only then think of others. Due to this, these galitarko tend to stay in small packs or even all alone and have nomadic tendencies.
+
+Polar galitarko names have a lot of vowels, particularly ones that necessitate the rounding of the lips such as Oulow, Gaupo, Urrobon and Abapaoa.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constituion score increases by 1.</p>
+			<p class="indent"><strong><em>Freezing Waters.</em></strong> You have a swim speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Keen Sight.</em></strong> You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+			<p class="indent"><strong><em>Bearly Ready.</em></strong> When you roll initiative you can grant advantage to an ally within 30 ft. while granting disadvantage on yourself.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Smidian and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FREEZING_WATERS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SIGHT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARLY_READY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_POLAR_LANGUAGES" />
+			<grant type="Language" id="ID_LANGUAGE_SMIDIAN" />
+		</rules>
+	</element> 	
+	<element name="Freezing Waters" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_FREEZING_WATERS" >
+		<description>
+			<p>You have a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a climbing speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+		<stat name="innate speed:climb" value="speed" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
+		<description>
+			<p>You have advantage on Charisma (Persuasion) checks.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on Charisma (Persuasion) checks.</description>
+		</sheet>
+	</element>
+	<element name="Roll-up" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ROLLUP">
+		<description>
+			<p>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</p>
+		</description>
+		<sheet display="false">
+			<description>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</description>
+		</sheet>
+	</element>
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES2" >
+		<description>
+			<p>You can speak, read and write Ixali and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Languages" supports="Common" restrict="-Ixali"/>
+		</rules>
+	</element>
+
+
 
 </elements>
