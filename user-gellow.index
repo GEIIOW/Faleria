@@ -2,7 +2,8 @@
 <index>
 	<info>
 		<name>Faleria</name>
-		<description>Something nice for my DM.</description>
+		<description>Within the biggest empire this age has seen, a great mage studies the fabric of life itself.</description>
+		<author>Lucky Crow</author>
 		<update version="0.0.1">
 			<file name="user-gellow.index" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow.index" />
 		</update>
