@@ -6,15 +6,16 @@
 			<file name="languages.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/languages.xml" />
 		</update>
 	</info>
-	<element name="Portugues" type="Language" source="Faleria" id="ID_LANGUAGE_PORTUGUESE">
-		<supports>Standard</supports>
+	<element name="Ixali" type="Language" source="Faleria" id="ID_LANGUAGE_IXALI">
+		<supports>Common</supports>
 		<description>
-			<p>Typically spoken by Tuguinhas.</p>
+			<p>Common Tongue of Issadrem</p>
 		</description>
 		<setters>
-			<set name="standard">true</set>
-			<set name="speakers">Humans</set>
-			<set name="script">Common</set>
+			<set name="common">true</set>
+			<set name="speakers">Aarakocra, Galitarko, Genasi, Human, Dragonborn, Tortle, Kobold</set>
+			<set name="script">Tulist</set>
 		</setters>
 	</element>
+
 </elements>

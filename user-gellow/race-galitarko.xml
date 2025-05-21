@@ -162,6 +162,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARFRIEND" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROLLUP" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES2" />
+			<grant type="Language" id="ID_LANGUAGE_IXALI" />
 		</rules>
 	</element> 	
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
