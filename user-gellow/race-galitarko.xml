@@ -46,7 +46,7 @@
 		</rules>
 	</element>
 	
-		<!-- traits-->
+		<!-- traites-->
 		
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
 		<description>
