@@ -42,9 +42,13 @@
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
-			<select type="Race Variant" name="Galitarko Mortal Subtype" supports="Galitarko Variant" optional="true" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
 		</rules>
 	</element>
+	
+		<!-- traits-->
+		
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
 		<description>
 			<p>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
@@ -52,7 +56,8 @@
 		<sheet>
 			<description>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
 		</sheet>
-	</element>    
+	</element>  
+	
 	<element name="Mauling Strike" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE">
 		<description>
 			<p>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</p>
@@ -60,59 +65,89 @@
 		<sheet>
 			<description>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</description>
 		</sheet>
+	</element>
+
+	<element name="Bearable" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+	</element>
+	
+	<element name="Galitarko Mortal subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
+		<description>
+			<p>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
+		</description>
+		<sheet display="false" />
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Half-Elf)" supports="Skill" number="2" />
+			<select type="Sub Race" name="Galitarko subtype" supports="Galitarko" />
+		</rules>
+	</element>
+	
+	
+	<!--subtypes-->
+	
+	<element name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
+		<supports>Galitarko</supports>
+		<description>
+			<p> The grizzly galitarko wear a resemblance to either black, brown or grey bears. Natural of Manyhal and western Zeiloryn, these huge mortals can produce a fierce roar, 
+			unlike any other. Though they might seem brutish, many carry the philosophy of Lendo, 
+			that teaches you to always try to work for the greater good. In the case of the galitarko on the western side of Zeiloryn, 
+			that meant joining the empire and it’s conquest. Grizzly galitarko often have only one name derived from an adjective given while they were young, such as Fasten, Hungrial, Madden and Swiffy.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>High Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p class="indent"><strong><em>Bearware.</em></strong> It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARWARE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
+		</rules>
+	</element> 	
+
+	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
+		<description>
+			<p>You have a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a climbing speed equal to your walking speed.</description>
+		</sheet>
+	</element>
+
+	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+
+	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
+		<description>
+			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
+		</description>
+		<sheet display="false">
+			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
+		</sheet>
+	</element>
+
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES">
+		<description>
+			<p>You can speak, read and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Languages" supports="Standard" />
 		</rules>
 	</element>
 
-	<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_STRENGTH">
-		<compendium display="false" />
-		<supports>Half-Elf</supports>
-		<description>
-			<p>Your Strength score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="strength" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_DEXTERITY">
-		<compendium display="false" />
-		<supports>Half-Elf</supports>
-		<description>
-			<p>Your Dexterity score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="dexterity" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_CONSTITUTION">
-		<compendium display="false" />
-		<supports>Half-Elf</supports>
-		<description>
-			<p>Your Constitution score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="constitution" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_INTELLIGENCE">
-		<compendium display="false" />
-		<supports>Half-Elf</supports>
-		<description>
-			<p>Your Intelligence score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="intelligence" value="1"/>
-		</rules>
-	</element>
-	<element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Player’s Handbook" id="ID_RACIAL_TRAIT_HALFELF_WISDOM">
-		<compendium display="false" />
-		<supports>Half-Elf</supports>
-		<description>
-			<p>Your Wisdom score increases by 1.</p>
-		</description>
-		<rules>
-			<stat name="wisdom" value="1"/>
-		</rules>
-	</element>
+
 </elements>
