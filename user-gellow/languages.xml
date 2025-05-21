@@ -16,6 +16,7 @@
 			<set name="speakers">Aarakocra, Galitarko, Genasi, Human, Dragonborn, Tortle, Kobold</set>
 			<set name="script">Tulist</set>
 		</setters>
+	</element>
 	<element>
 		<element name="Silvanian" type="Language" source="Faleria" id="ID_LANGUAGE_SILVANIAN">
 		<supports>Common</supports>
