@@ -119,7 +119,7 @@
 		</sheet>
 		<rules>
 		<stat name="innate speed:climb" value="30" bonus="base"/>
-		<rules>
+		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
