@@ -17,5 +17,16 @@
 			<set name="script">Tulist</set>
 		</setters>
 	</element>
+		<element name="Silvanian" type="Language" source="Faleria" id="ID_LANGUAGE_SILVANIAN">
+		<supports>Common</supports>
+		<description>
+			<p>Common Tongue of Silvermace</p>
+		</description>
+		<setters>
+			<set name="common">true</set>
+			<set name="speakers">Human, Elf, Lenam, Aarakocra, Genasi, Centaur, Goliath;</set>
+			<set name="script">Adelon</set>
+		</setters>
+	</element>
 
 </elements>
