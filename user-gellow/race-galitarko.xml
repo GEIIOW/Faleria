@@ -118,7 +118,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="speed:climb" value="speed" bonus="bonus"/>
+		<stat name="speed:climb" value="speed" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
@@ -143,7 +143,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Common" value="3"/>
+			<select type="Language" name="Language" supports="Common" />
+			<select type="Language" name="Language" supports="Common" />
+			<select type="Language" name="Language" supports="Common" />
 		</rules>
 	</element>
 
