@@ -116,10 +116,8 @@
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
 		</description>
-		<sheet display="true">
-			<description>You have a climbing speed equal to your walking speed.</description>
-		</sheet>
 		<rules>
+			<grant type="Grants" id="ID_SUB_RACE_GALITARKO_GRIZZLY"/>
 			<stat name="speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
