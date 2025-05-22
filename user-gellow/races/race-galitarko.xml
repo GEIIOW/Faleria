@@ -118,7 +118,6 @@
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
-		<sheet display="true">
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>
 	</element>
@@ -127,7 +126,6 @@
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 		</description>
-		<sheet display="false">
 			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
 	</element>
@@ -135,7 +133,6 @@
 		<description>
 			<p>You can speak, read and write three languages of your choice.</p>
 		</description>
-		<sheet display="false" />
 		<rules>
 			<select type="Language" name="Language (Grizzly)" supports="Common" />
 			<select type="Language" name="Language (Grizzly)" supports="Common" />
