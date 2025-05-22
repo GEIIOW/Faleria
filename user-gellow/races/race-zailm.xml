@@ -1,19 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Galitarko</name>
+		<name>Zailm</name>
 		<update version="0.0.1">
-			<file name="race-galitarko.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/race-galitarko.xml" />
+			<file name="race-Zailm.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/race-zailm.xml" />
 		</update>
 	</info>
-	<element name="Galitarko" type="Race" source="Faleria" id="ID_RACE_GALITARKO">
+	<element name="Zailm" type="Race" source="Faleria" id="ID_RACE_ZAILM">
 		<description>
-			<p class="flavor">My role as Gran Caster of the Silvermace Empire makes me one of the most influential men in our world. All my wishes are met, 
-			save for unlimited live subjects for my experiments. So, it was a great shock once I entered our soon to be new territory of Issadrem and found myself at the mercy of others. My prowess couldn’t be 
-			openly displayed for fear of being discovered in enemy territory, so I went from town to town looking for the kindness of strangers. I came to this land to see if their spiritual attunement would result in any
-			difference presenting in their souls. In one of these villages I met Master Sur’Tzen, a galitarko that gave me a roof and a bowl fulll of food, along with invaluable wisdom. He told me that our soul, pure or evil, is 
-			like a cup of water. Emotions fill half the cup and logic fills the other half, but alone none quench our souls’ thirst. At that table my greatest setback was resolved. I had been looking for souls but never knew just how to locate them.
-			I shall return to Evalnar at once.</p>
+			<p class="flavor">“My work may not yet be complete, but these creatures show just how grandiose my purpose is. After years of work, I’ve finally made substancial progress when it comes to using the power of souls. The men and women that were part of my latest test, of trying to power a dead body with only the power of a soul, have been reanimated as something more than they were before. While they still don’t seem to have memories of their previous life, they have become stronger, some have become faster and more resilient. Nothing less than a complete success.”</p>
+				<p class="indent">- Y. Mageshell, Manyhals of Death</p>
+				<p class="indent">The Zailm are reborn warriors who can’t get a grasp of their past. Originating from Zeiloryn, these once mortal humanoids scattered throughout Faleria in seach of themselves. While their past may be lost to them, their future is full of potencial due to their mind being null of previous abilities and their new enhanced physiology.</p>
+			
+			 <h4>IMORTALIZED MORTALS</h4>
+				<p class="indent">Zailm don’t all hail from a shared mortal type. There are those who seem to have been human, others who are of a smaller stature and resemble halflings or gnomes and even those who tower over the tallest of mortals. Their state of decay is irrelevant to their functionallity, so it’s possible to see some Zailm who are missing limbs, jaws or much more of their bodies, while others are in pristine condition, only being recognised as Zailm due to their shared grayish skin tone.</p>
+				<p class="indent">Despite this military power, it is far more common for Vlandaer to be on the defensive rather than on the attack as they only sought refuge from a world that didn’t accept them. Something that may be bound to change.</p>
+			
 
 			<h4>GALITARKO TRAITS</h4>
 			<p>Galitarkos seem to be born with an assortment of abilities.</p>
