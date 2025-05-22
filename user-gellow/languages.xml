@@ -39,8 +39,6 @@
 			<set name="script">Askresh</set>
 		</setters>
 	</element>
-
-	</element>
 		<element name="Smidian" type="Language" source="Faleria" id="ID_LANGUAGE_SMIDIAN">
 		<supports>Common</supports>
 		<description>
