@@ -76,6 +76,7 @@
 	</element>
 	
 	<element name="Galitarko Mortal Subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
+		<compendium display="false" />
 		<description>
 			<p>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
 		</description>

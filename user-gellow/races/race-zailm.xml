@@ -29,17 +29,17 @@
 
 
 			<h4>ZAILM TRAITS</h4>
-			<p>Galitarkos seem to be born with an assortment of abilities.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong>Your Strength score increases by 2.</p>
-			<p class="indent"><strong><em>Age.</em></strong>Galitarkos reach adulthood at around 9 years old and live about 50 years.</p>
-			<p class="indent"><strong><em>Size.</em></strong>Galitarkos stand between 6 and 8 feet tall and average about 400 pounds. Your size is Medium.</p>
+			<p>Zailm seem to have been reborn with an assortment of new abilities.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong>You may choose to increase an ability score by 2 and one other ability score by one or increase three different ability scores by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong>It is unkown for how long the source of you new life can support it. Zailm don’t age, but will resume rotting when they reach 0 hit points or if their connection to their source of new life is broken.</p>
+			<p class="indent"><strong><em>Creature Type.</em></strong>You are an Undead.</p>
+			<p class="indent"><strong><em>Size.</em></strong>The size of Zailm is dependent on their previous life and there doesn’t seem to exist a medium of height nor weight. Your size is either Small or Medium.</p>
 			<p class="indent"><strong><em>Speed.</em></strong>Your base walking speed is 30 feet.</p>
-			<p class="indent"><strong><em>Claws.</em></strong>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
-			<p class="indent"><strong><em>Mauling Strike.</em></strong>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</p>
-			<p class="indent"><strong><em>Bearable.</em></strong>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
-			<p class="indent"><strong><em>Mortal subtype.</em></strong>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
+			<p class="indent"><strong><em>Sunlight Sensitivity.</em></strong>The decomposition that affected your sight has made you sensitive to intense sunlight. You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+			<p class="indent"><strong><em>Ethereal Sight.</em></strong>You can see 60 feet into the Ethereal Plane when you are on the Material Plane and vice versa.</p>
 		</description>
-		    <sheet display="false" />
+		
+		<sheet display="false" />
     	<setters> <!-- sera necessário ? -->
       		<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
       		<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
@@ -49,16 +49,39 @@
       		<set name="weight" modifier="2d4">110 lb.</set>
     	</setters>
 		<rules>
-			<stat name="strength" value="2"/>
 			<stat name="innate speed" value="30" bonus="base"/>
+			<select type="Racial Trait" name="Ability Score Increase by 2 (ZAILM)" supports="Zailm" optional="true"/>
+			<select type="Racial Trait" name="Ability Score Increase by 1 (ZAILM)" supports="Zailm" optional="true"/>
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
 		</rules>
 	</element>
 	
+		<!-- ability score by 2-->
+		
+		<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ZAILM_STRENGTH">
+			<compendium display="false" />
+			<supports>Zailm</supports>
+			<description>
+				<p>Your Strength score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="strength" value="2"/>
+			</rules>
+		</element>
+	
+		<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ZAILM_DEXTERITY">
+			<compendium display="false" />
+			<supports>Zailm</supports>
+			<description>
+				<p>Your Dexterity score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="dexterity" value="2"/>
+			</rules>
+		</element>
+	
+
 		<!-- traites-->
 		
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
