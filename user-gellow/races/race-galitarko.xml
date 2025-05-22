@@ -35,7 +35,6 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" requirements="ID_SUB_RACE_GALITARKO_GRIZZLY" />
 		</rules>
 	</element>
 	
@@ -49,7 +48,6 @@
 			<description>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
 		</sheet>	
 	</element>  
-	
 	<element name="Mauling Strike" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE">
 		<description>
 			<p>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</p>
@@ -58,7 +56,6 @@
 			<description>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</description>
 		</sheet>
 	</element>
-
 	<element name="Bearable" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE">
 		<description>
 			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
@@ -67,7 +64,6 @@
 			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
 		</sheet>
 	</element>
-	
 	<element name="Galitarko Mortal Subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
 		<compendium display="false" />
 		<description>
@@ -80,7 +76,7 @@
 	</element>
 	
 	
-	<!--subtypes-->
+	<!--SUBRACE-->
 	<!--Grizzly-->
 	<element name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
 		<supports>Galitarko</supports>
@@ -117,7 +113,6 @@
 		</rules>
 	
 	</element> 	
-
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
@@ -126,7 +121,6 @@
 			<stat name="speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
-
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
@@ -135,7 +129,6 @@
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>	
 	</element>  
-
 	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
@@ -143,8 +136,7 @@
 		<sheet>
 			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
-	</element>
-	
+	</element>	
 	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES">
 		<description>
 			<p>You can speak, read and write three languages of your choice.</p>
