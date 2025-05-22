@@ -142,9 +142,7 @@
 			<p>You can speak, read and write three languages of your choice.</p>
 		</description>
 		<rules>
-			<select type="Language" name="Language (Grizzly)" supports="Common" />
-			<select type="Language" name="Language (Grizzly)" supports="Common" />
-			<select type="Language" name="Language (Grizzly)" supports="Common" />
+			<select type="Language" name="Language (Grizzly)" supports="Common" value="3"/>
 		</rules>
 	</element>
 
