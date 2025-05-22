@@ -6,6 +6,7 @@
 			<file name="languages.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/languages.xml" />
 		</update>
 	</info>
+	
 	<element name="Ixali" type="Language" source="Faleria" id="ID_LANGUAGE_IXALI">
 		<supports>Common</supports>
 		<description>
@@ -17,7 +18,8 @@
 			<set name="script">Tulist</set>
 		</setters>
 	</element>
-		<element name="Silvanian" type="Language" source="Faleria" id="ID_LANGUAGE_SILVANIAN">
+		
+	<element name="Silvanian" type="Language" source="Faleria" id="ID_LANGUAGE_SILVANIAN">
 		<supports>Common</supports>
 		<description>
 			<p>Common Tongue of Silvermace</p>
@@ -28,7 +30,8 @@
 			<set name="script">Adelon</set>
 		</setters>
 	</element>
-		<element name="Gnish" type="Language" source="Faleria" id="ID_LANGUAGE_GNISH">
+		
+	<element name="Gnish" type="Language" source="Faleria" id="ID_LANGUAGE_GNISH">
 		<supports>Common</supports>
 		<description>
 			<p>Common Tongue of Gnawland</p>
@@ -39,7 +42,8 @@
 			<set name="script">Askresh</set>
 		</setters>
 	</element>
-		<element name="Smidian" type="Language" source="Faleria" id="ID_LANGUAGE_SMIDIAN">
+		
+	<element name="Smidian" type="Language" source="Faleria" id="ID_LANGUAGE_SMIDIAN">
 		<supports>Common</supports>
 		<description>
 			<p>Common tongue of the continent of Nyjorsa</p>
