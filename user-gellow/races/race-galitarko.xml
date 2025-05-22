@@ -81,7 +81,7 @@
 	
 	<!--subtypes-->
 	<!--Grizzly-->
-	<element name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
+	<append name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
 		<supports>Galitarko</supports>
 		<description>
 			<p> The grizzly galitarko wear a resemblance to either black, brown or grey bears. Natural of Manyhal and western Zeiloryn, these huge mortals can produce a fierce roar, 
@@ -94,16 +94,15 @@
 			<p class="indent"><strong><em>Bearware.</em></strong> It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
 		</description>
-		<sheet display="true" />
+		<sheet display="false" />
 		<rules>
-			<grant type="Grants" id="ID_SUB_RACE_GALITARKO_GRIZZLY" />	
 			<stat name="wisdom" value="1" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARWARE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
 		</rules>
-	</element> 	
+	</append> 	
 
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
 		<description>
