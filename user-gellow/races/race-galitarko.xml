@@ -65,7 +65,7 @@
 			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
 		</sheet>
 	</element>
-	<element name="Bearable" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE2">
+	<element name="Bearable2" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE2">
 		<description>
 			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 		</description>
