@@ -27,14 +27,6 @@
 			<p class="indent"><strong><em>Mortal subtype.</em></strong>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
 		</description>
 		    <sheet display="false" />
-    	<setters> <!-- sera necessário ? -->
-      		<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
-      		<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
-      		<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
-      		<set name="names-format">{{name}} {{surname}}</set>
-      		<set name="height" modifier="2d10">4'8"</set>
-      		<set name="weight" modifier="2d4">110 lb.</set>
-    	</setters>
 		<rules>
 			<stat name="strength" value="2"/>
 			<stat name="innate speed" value="30" bonus="base"/>
@@ -46,7 +38,7 @@
 		</rules>
 	</element>
 	
-		<!-- traites-->
+		<!-- traits-->
 		
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
 		<description>
@@ -54,7 +46,7 @@
 		</description>
 		<sheet>
 			<description>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
-		</sheet>
+		</sheet>	
 	</element>  
 	
 	<element name="Mauling Strike" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE">
@@ -125,7 +117,7 @@
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="true">
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>
 	</element>
