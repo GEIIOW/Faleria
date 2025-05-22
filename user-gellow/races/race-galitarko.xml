@@ -76,7 +76,15 @@
 			<select type="Sub Race" name="Galitarko subtype" supports="Galitarko" />
 		</rules>
 	</element>
-	
+
+	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>	
+	</element>  
 	
 	<!--SUBRACE-->
 	<!--Grizzly-->
@@ -105,14 +113,6 @@
 			<br/>
 		</description>
 		<sheet alt="Grizzly Galitarko" display="false" />
-		
-		<rules>
-			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARWARE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
-		</rules>
 	
 	</element> 	
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
@@ -120,14 +120,7 @@
 			<p>You have a climbing speed equal to your walking speed.</p>
 		</description>
 	</element>
-	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
-		<description>
-			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
-		</description>
-		<sheet>
-			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
-		</sheet>	
-	</element>  
+
 	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
