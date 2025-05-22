@@ -35,6 +35,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" requirements="ID_SUB_RACE_GALITARKO_GRIZZLY" />
 		</rules>
 	</element>
 	
@@ -123,7 +124,7 @@
 		</sheet>	
 	</element>  
 
-		<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
+	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 		</description>
