@@ -136,6 +136,7 @@
 		<description>
 			<p>You can speak, read and write three languages of your choice.</p>
 		</description>
+		<sheet display="false" />
 		<rules>
 			<select type="Language" name="Language (Grizzly)" supports="Common" />
 			<select type="Language" name="Language (Grizzly)" supports="Common" />
