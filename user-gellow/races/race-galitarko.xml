@@ -89,21 +89,33 @@
 			unlike any other. Though they might seem brutish, many carry the philosophy of Lendo, 
 			that teaches you to always try to work for the greater good. In the case of the galitarko on the western side of Zeiloryn, 
 			that meant joining the empire and it’s conquest. Grizzly galitarko often have only one name derived from an adjective given while they were young, such as Fasten, Hungrial, Madden and Swiffy.</p>
-			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
-			<p class="indent"><strong><em>High Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
-			<p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
-			<p class="indent"><strong><em>Bearware.</em></strong> It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
-			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
+			
+			<span class="feature">Ability Score Increase.</span>
+				Your Wisdom score increases by 1.
+			<br/>
+			<span class="feature">High Climber.</span>
+				You have a climbing speed equal to your walking speed.
+			<br/>
+			<span class="feature">Keen Smell.</span>
+				You have advantage on Wisdom (Perception) checks that rely on smell.
+			<br/>
+			<span class="feature">Bearware.</span>
+				 It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.
+			<br/>
+			<span class="feature">Languages.</span>
+				 You can speak, read and write three languages of your choice.
+			<br/>
 		</description>
-		<sheet display="false" />
+		<sheet alt="Grizzly Galitarko" display="false" />
+		
 		<rules>
-			<stat name="wisdom" value="1" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARWARE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
-			<select type="Race Variant" name="Grizzly Galitarko" supports="Grizzly Galitarko"/>
 		</rules>
+	
 	</element> 	
 
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
@@ -259,7 +271,5 @@
 			<select type="Language" name="Language (Polar Galitarko)" supports="Common" restrict="-Smidian"/>
 		</rules>
 	</element>
-
-
 
 </elements>
