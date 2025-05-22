@@ -119,8 +119,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<grant type="Grants" id="ID_RACE_GALITARKO"/>
-			<stat name="innate speed:climb" value="speed" bonus="base" />
+			<stat name="innate speed:climb" value="30" bonus="base" />
 		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
@@ -180,8 +179,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<grant type="Grants" id="ID_RACE_GALITARKO"/>
-			<stat name="innate speed:climb" value="speed" bonus="base" />
+			<stat name="innate speed:climb" value="30" bonus="base" />
 		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
@@ -239,8 +237,7 @@
 			<description>You have a swim speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<grant type="Grants" id="ID_RACE_GALITARKO"/>
-			<stat name="innate speed:swim" value="speed" bonus="base"/>
+			<stat name="innate speed:swim" value="30" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SIGHT">
