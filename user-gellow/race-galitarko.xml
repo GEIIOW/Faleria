@@ -118,7 +118,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="innate speed:climb" value="speed" bonus="base"/>
+			<stat name="innate speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
@@ -143,9 +143,9 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Language" supports="Common" />
-			<select type="Language" name="Language" supports="Common" />
-			<select type="Language" name="Language" supports="Common" />
+			<select type="Language" name="Language (Grizzly)" supports="Common" />
+			<select type="Language" name="Language (Grizzly)" supports="Common" />
+			<select type="Language" name="Language (Grizzly)" supports="Common" />
 		</rules>
 	</element>
 
@@ -178,7 +178,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="innate speed:climb" value="speed" bonus="base"/>
+			<stat name="innate speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
@@ -203,7 +203,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Common" restrict="-Ixali"/>
+			<select type="Language" name="Language (Panda Galitarko)" supports="Common" restrict="-Ixali"/>
 		</rules>
 	</element>
 
@@ -211,9 +211,7 @@
 	<element name="Polar Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_POLAR">
 		<supports>Galitarko</supports>
 		<description>
-			<p>The polar galitarko wear a resemblance to polar bears. Natural to Nyjörsa, these mortals are followers of the Stengul philosophy, that teaches you to first take care of yourself and your closest allies and only then think of others. Due to this, these galitarko tend to stay in small packs or even all alone and have nomadic tendencies.
-
-Polar galitarko names have a lot of vowels, particularly ones that necessitate the rounding of the lips such as Oulow, Gaupo, Urrobon and Abapaoa.</p>
+			<p>The polar galitarko wear a resemblance to polar bears. Natural to Nyjörsa, these mortals are followers of the Stengul philosophy, that teaches you to first take care of yourself and your closest allies and only then think of others. Due to this, these galitarko tend to stay in small packs or even all alone and have nomadic tendencies. Polar galitarko names have a lot of vowels, particularly ones that necessitate the rounding of the lips such as Oulow, Gaupo, Urrobon and Abapaoa.</p>
 			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constituion score increases by 1.</p>
 			<p class="indent"><strong><em>Freezing Waters.</em></strong> You have a swim speed equal to your walking speed.</p>
 			<p class="indent"><strong><em>Keen Sight.</em></strong> You have advantage on Wisdom (Perception) checks that rely on sight.</p>
@@ -238,7 +236,7 @@ Polar galitarko names have a lot of vowels, particularly ones that necessitate t
 			<description>You have a swim speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="innate speed:swim" value="speed" bonus="base"/>
+			<stat name="innate speed:swim" value="speed" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SIGHT">
@@ -263,7 +261,7 @@ Polar galitarko names have a lot of vowels, particularly ones that necessitate t
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Common" restrict="-Smidian"/>
+			<select type="Language" name="Language (Polar Galitarko)" supports="Common" restrict="-Smidian"/>
 		</rules>
 	</element>
 
