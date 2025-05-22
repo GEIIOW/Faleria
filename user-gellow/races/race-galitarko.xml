@@ -102,7 +102,7 @@
 			<p class="indent"><strong><em>Bearware.</em></strong> It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
 		</description>
-		<sheet display="false" />
+		<sheet display="true" />
 		<rules>
 			<stat name="wisdom" value="1" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
@@ -117,7 +117,6 @@
 			<p>You have a climbing speed equal to your walking speed.</p>
 		</description>
 		<rules>
-			<grant type="Grants" id="ID_SUB_RACE_GALITARKO_GRIZZLY"/>
 			<stat name="speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
