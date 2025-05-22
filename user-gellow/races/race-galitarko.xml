@@ -35,6 +35,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" requirements="ID_SUB_RACE_GALITARKO_GRIZZLY"/>
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
 		</rules>
 	</element>
@@ -118,9 +119,6 @@
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
 		</description>
-		<rules>
-			<stat name="speed:climb" value="speed" bonus="base" />
-		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
