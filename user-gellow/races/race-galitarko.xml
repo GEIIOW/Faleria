@@ -111,6 +111,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
 		</rules>
 	</element> 	
+
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
@@ -119,9 +120,10 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<stat name="speed:climb" value="speed" />
+			<stat name="speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
+
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
@@ -130,6 +132,7 @@
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>
 	</element>
+
 	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
@@ -179,7 +182,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<stat name="innate speed:climb" value="30" bonus="base" />
+			<stat name="speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
@@ -237,7 +240,7 @@
 			<description>You have a swim speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<stat name="innate speed:swim" value="30" bonus="base"/>
+			<stat name="speed:swim" value="speed" bonus="base"/>
 		</rules>
 	</element>
 	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SIGHT">
