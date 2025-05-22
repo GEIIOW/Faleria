@@ -81,7 +81,7 @@
 	
 	<!--subtypes-->
 	<!--Grizzly-->
-	<append name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
+	<element name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
 		<supports>Galitarko</supports>
 		<description>
 			<p> The grizzly galitarko wear a resemblance to either black, brown or grey bears. Natural of Manyhal and western Zeiloryn, these huge mortals can produce a fierce roar, 
@@ -102,7 +102,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARWARE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
 		</rules>
-	</append> 	
+	</element> 	
 
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
 		<description>
