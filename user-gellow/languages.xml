@@ -39,6 +39,18 @@
 			<set name="script">Askresh</set>
 		</setters>
 	</element>
+
+	</element>
+		<element name="Smidian" type="Language" source="Faleria" id="ID_LANGUAGE_SMIDIAN">
+		<supports>Common</supports>
+		<description>
+			<p>Common tongue of the continent of Nyjorsa</p>
+		</description>
+		<setters>
+			<set name="common">true</set>
+		</setters>
+	</element>
+	
 </elements>
 
 

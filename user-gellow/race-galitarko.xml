@@ -232,38 +232,38 @@ Polar galitarko names have a lot of vowels, particularly ones that necessitate t
 	</element> 	
 	<element name="Freezing Waters" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_FREEZING_WATERS" >
 		<description>
-			<p>You have a climbing speed equal to your walking speed.</p>
+			<p>You have a swim speed equal to your walking speed.</p>
 		</description>
 		<sheet display="false">
-			<description>You have a climbing speed equal to your walking speed.</description>
+			<description>You have a swim speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-		<stat name="innate speed:climb" value="speed" bonus="base"/>
+		<stat name="innate speed:swim" value="speed" bonus="base"/>
 		</rules>
 	</element>
-	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
+	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SIGHT">
 		<description>
-			<p>You have advantage on Charisma (Persuasion) checks.</p>
+			<p>You have advantage on Wisdom (Perception) checks that rely on sight.</p>
 		</description>
 		<sheet display="false">
-			<description>You have advantage on Charisma (Persuasion) checks.</description>
+			<description>You have advantage on Wisdom (Perception) checks that rely on sight.</description>
 		</sheet>
 	</element>
-	<element name="Roll-up" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ROLLUP">
+	<element name="Roll-up" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARLY_READY">
 		<description>
-			<p>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</p>
+			<p>When you roll initiative you can grant advantage to an ally within 30 ft. while granting disadvantage on yourself.</p>
 		</description>
 		<sheet display="false">
-			<description>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</description>
+			<description>When you roll initiative you can grant advantage to an ally within 30 ft. while granting disadvantage on yourself.</description>
 		</sheet>
 	</element>
-	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES2" >
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_POLAR_LANGUAGES" >
 		<description>
-			<p>You can speak, read and write Ixali and one other language of your choice.</p>
+			<p>You can speak, read and write Smidian and one other language of your choice.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Languages" supports="Common" restrict="-Ixali"/>
+			<select type="Language" name="Languages" supports="Common" restrict="-Smidian"/>
 		</rules>
 	</element>
 
