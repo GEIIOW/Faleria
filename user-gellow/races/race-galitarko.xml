@@ -30,12 +30,11 @@
 		<rules>
 			<stat name="strength" value="2"/>
 			<stat name="innate speed" value="30" bonus="base"/>
-			<stat name="speed:climb" value="speed" bonus="base"/>
+			<stat name="speed:climb" value="speed" bonus="base" requirements="ID_SUB_RACE_GALITARKO_GRIZZLY||ID_SUB_RACE_GALITARKO_PANDA"/>
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
-			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE2" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
 		</rules>
 	</element>
@@ -59,14 +58,6 @@
 		</sheet>
 	</element>
 	<element name="Bearable" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE">
-		<description>
-			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
-		</description>
-		<sheet>
-			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
-		</sheet>
-	</element>
-	<element name="Bearable2" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE2">
 		<description>
 			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
 		</description>
