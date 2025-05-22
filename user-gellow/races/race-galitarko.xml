@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Galitarko</name>
+		<update version="0.0.1">
+			<file name="race-galitarko.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/races/race-galitarko.xml" />
+		</update>
+	</info>
+	<element name="Galitarko" type="Race" source="Faleria" id="ID_RACE_GALITARKO">
+		<description>
+			<p class="flavor">My role as Gran Caster of the Silvermace Empire makes me one of the most influential men in our world. All my wishes are met, 
+			save for unlimited live subjects for my experiments. So, it was a great shock once I entered our soon to be new territory of Issadrem and found myself at the mercy of others. My prowess couldn’t be 
+			openly displayed for fear of being discovered in enemy territory, so I went from town to town looking for the kindness of strangers. I came to this land to see if their spiritual attunement would result in any
+			difference presenting in their souls. In one of these villages I met Master Sur’Tzen, a galitarko that gave me a roof and a bowl fulll of food, along with invaluable wisdom. He told me that our soul, pure or evil, is 
+			like a cup of water. Emotions fill half the cup and logic fills the other half, but alone none quench our souls’ thirst. At that table my greatest setback was resolved. I had been looking for souls but never knew just how to locate them.
+			I shall return to Evalnar at once.</p>
+
+			<h4>GALITARKO TRAITS</h4>
+			<p>Galitarkos seem to be born with an assortment of abilities.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong>Your Strength score increases by 2.</p>
+			<p class="indent"><strong><em>Age.</em></strong>Galitarkos reach adulthood at around 9 years old and live about 50 years.</p>
+			<p class="indent"><strong><em>Size.</em></strong>Galitarkos stand between 6 and 8 feet tall and average about 400 pounds. Your size is Medium.</p>
+			<p class="indent"><strong><em>Speed.</em></strong>Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Claws.</em></strong>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+			<p class="indent"><strong><em>Mauling Strike.</em></strong>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</p>
+			<p class="indent"><strong><em>Bearable.</em></strong>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+			<p class="indent"><strong><em>Mortal subtype.</em></strong>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
+		</description>
+		    <sheet display="false" />
+    	<setters> <!-- sera necessário ? -->
+      		<set name="names" type="male">Ander, Blath, Bran, Frath, Geth, Lander, Luth, Malcer, Stor, Taman, Urth</set>
+      		<set name="names" type="female">Amafrey, Betha, Cefrey, Kethra, Mara, Olga, Silifrey, Westra</set>
+      		<set name="names" type="surname">Brightwood, Helder, Hornraven, Lackman, Stormwind, Windrivver</set>
+      		<set name="names-format">{{name}} {{surname}}</set>
+      		<set name="height" modifier="2d10">4'8"</set>
+      		<set name="weight" modifier="2d4">110 lb.</set>
+    	</setters>
+		<rules>
+			<stat name="strength" value="2"/>
+			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
+		</rules>
+	</element>
+	
+		<!-- traites-->
+		
+	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
+		<description>
+			<p>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
+		</description>
+		<sheet>
+			<description>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
+		</sheet>
+	</element>  
+	
+	<element name="Mauling Strike" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE">
+		<description>
+			<p>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</p>
+		</description>
+		<sheet>
+			<description>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</description>
+		</sheet>
+	</element>
+
+	<element name="Bearable" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE">
+		<description>
+			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+		</description>
+		<sheet>
+			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+		</sheet>
+	</element>
+	
+	<element name="Galitarko Mortal Subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
+		<description>
+			<p>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Galitarko subtype" supports="Galitarko" />
+		</rules>
+	</element>
+	
+	
+	<!--subtypes-->
+	<!--Grizzly-->
+	<element name="Grizzly Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_GRIZZLY">
+		<supports>Galitarko</supports>
+		<description>
+			<p> The grizzly galitarko wear a resemblance to either black, brown or grey bears. Natural of Manyhal and western Zeiloryn, these huge mortals can produce a fierce roar, 
+			unlike any other. Though they might seem brutish, many carry the philosophy of Lendo, 
+			that teaches you to always try to work for the greater good. In the case of the galitarko on the western side of Zeiloryn, 
+			that meant joining the empire and it’s conquest. Grizzly galitarko often have only one name derived from an adjective given while they were young, such as Fasten, Hungrial, Madden and Swiffy.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>High Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p class="indent"><strong><em>Bearware.</em></strong> It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARWARE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES" />
+		</rules>
+	</element> 	
+	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
+		<description>
+			<p>You have a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a climbing speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
+		<description>
+			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
+		</description>
+		<sheet display="false">
+			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
+		</sheet>
+	</element>
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES">
+		<description>
+			<p>You can speak, read and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Grizzly)" supports="Common" />
+			<select type="Language" name="Language (Grizzly)" supports="Common" />
+			<select type="Language" name="Language (Grizzly)" supports="Common" />
+		</rules>
+	</element>
+
+	<!--Panda-->
+	<element name="Panda Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_PANDA">
+		<supports>Galitarko</supports>
+		<description>
+			<p>The panda galitarko wear a resemblance to either giant, qinling or red pandas. Natural of Issadrem, these spot furred mortals are known for their selflessness. Followers of the Iendu philosophy, that teaches you to follow the path to self improvement and communal harmony. They protect their lands and those of others even if that means taking up arms.Panda galitarko follow the naming convention that’s prevalent in Issadrem, with two different parts separated by an apostrophe. The first part functions as a one syllable family name and the second as a name for each person. Examples of this naming convention are ones such as Sur’Tzen, Gar’Meren, Pol’Jalgoren and Gra’Cious.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Charisma score increases by 1.</p>
+			<p class="indent"><strong><em>High Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Bearfriend.</em></strong> You have advantage on Charisma (Persuasion) checks.</p>
+			<p class="indent"><strong><em>Roll-up.</em></strong> If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARFRIEND" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_ROLLUP" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LANGUAGES2" />
+			<grant type="Language" id="ID_LANGUAGE_IXALI" />
+		</rules>
+	</element> 	
+	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
+		<description>
+			<p>You have a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a climbing speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARFRIEND">
+		<description>
+			<p>You have advantage on Charisma (Persuasion) checks.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on Charisma (Persuasion) checks.</description>
+		</sheet>
+	</element>
+	<element name="Roll-up" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ROLLUP">
+		<description>
+			<p>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</p>
+		</description>
+		<sheet display="false">
+			<description>If you are not wearing heavy armor, when enemies try to shove you into the prone condition you are pushed 5 feet away instead. Additionaly, standing up from prone only takes 5 feet of movement, if you are not wearing heavy armor.</description>
+		</sheet>
+	</element>
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES2" >
+		<description>
+			<p>You can speak, read and write Ixali and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Panda Galitarko)" supports="Common" restrict="-Ixali"/>
+		</rules>
+	</element>
+
+	<!--Polar-->
+	<element name="Polar Galitarko" type="Sub Race" source="Faleria" id="ID_SUB_RACE_GALITARKO_POLAR">
+		<supports>Galitarko</supports>
+		<description>
+			<p>The polar galitarko wear a resemblance to polar bears. Natural to Nyjörsa, these mortals are followers of the Stengul philosophy, that teaches you to first take care of yourself and your closest allies and only then think of others. Due to this, these galitarko tend to stay in small packs or even all alone and have nomadic tendencies. Polar galitarko names have a lot of vowels, particularly ones that necessitate the rounding of the lips such as Oulow, Gaupo, Urrobon and Abapaoa.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constituion score increases by 1.</p>
+			<p class="indent"><strong><em>Freezing Waters.</em></strong> You have a swim speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Keen Sight.</em></strong> You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+			<p class="indent"><strong><em>Bearly Ready.</em></strong> When you roll initiative you can grant advantage to an ally within 30 ft. while granting disadvantage on yourself.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write Smidian and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_FREEZING_WATERS" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SIGHT" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_BEARLY_READY" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_POLAR_LANGUAGES" />
+			<grant type="Language" id="ID_LANGUAGE_SMIDIAN" />
+		</rules>
+	</element> 	
+	<element name="Freezing Waters" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_FREEZING_WATERS" >
+		<description>
+			<p>You have a swim speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false">
+			<description>You have a swim speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:swim" value="speed" bonus="base"/>
+		</rules>
+	</element>
+	<element name="Bearfriend" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SIGHT">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+		</description>
+		<sheet display="false">
+			<description>You have advantage on Wisdom (Perception) checks that rely on sight.</description>
+		</sheet>
+	</element>
+	<element name="Roll-up" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARLY_READY">
+		<description>
+			<p>When you roll initiative you can grant advantage to an ally within 30 ft. while granting disadvantage on yourself.</p>
+		</description>
+		<sheet display="false">
+			<description>When you roll initiative you can grant advantage to an ally within 30 ft. while granting disadvantage on yourself.</description>
+		</sheet>
+	</element>
+	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_POLAR_LANGUAGES" >
+		<description>
+			<p>You can speak, read and write Smidian and one other language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Polar Galitarko)" supports="Common" restrict="-Smidian"/>
+		</rules>
+	</element>
+
+
+
+</elements>
