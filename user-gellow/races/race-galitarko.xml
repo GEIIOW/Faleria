@@ -96,6 +96,7 @@
 		</description>
 		<sheet display="true" />
 		<rules>
+			<grant type="Grants" id="ID_SUB_RACE_GALITARKO_GRIZZLY" />	
 			<stat name="wisdom" value="1" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_KEEN_SMELL" />
