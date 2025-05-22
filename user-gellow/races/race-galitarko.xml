@@ -119,6 +119,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
+			<grant type="Grants" id="ID_RACE_GALITARKO"/>
 			<stat name="innate speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
@@ -179,6 +180,7 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
+			<grant type="Grants" id="ID_RACE_GALITARKO"/>
 			<stat name="innate speed:climb" value="speed" bonus="base" />
 		</rules>
 	</element>
@@ -237,6 +239,7 @@
 			<description>You have a swim speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
+			<grant type="Grants" id="ID_RACE_GALITARKO"/>
 			<stat name="innate speed:swim" value="speed" bonus="base"/>
 		</rules>
 	</element>
