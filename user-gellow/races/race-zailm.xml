@@ -51,13 +51,37 @@
 		<rules>
 			<stat name="innate speed" value="30" bonus="base"/>
 			<select type="Racial Trait" name="Ability Score Increase by 2 (ZAILM)" supports="Zailm" optional="true"/>
-			<select type="Ability Score Improvement" name="Ability Score Increase by 1 (Zailm)" 
-			supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA"/>
+			<select type="Racial Trait" name="Ability Score Increase by 1 (ZAILM)" supports="Zailm" optional="true"/>
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
 		</rules>
 	</element>
 	
+		<!-- ability score by 2-->
+		
+		<element name="Ability Score Increase (Strength)" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ZAILM_STRENGTH">
+			<compendium display="false" />
+			<supports>Zailm</supports>
+			<description>
+				<p>Your Strength score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="strength" value="2"/>
+			</rules>
+		</element>
+	
+		<element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_ZAILM_DEXTERITY">
+			<compendium display="false" />
+			<supports>Zailm</supports>
+			<description>
+				<p>Your Dexterity score increases by 2.</p>
+			</description>
+			<rules>
+				<stat name="dexterity" value="2"/>
+			</rules>
+		</element>
+	
+
 		<!-- traites-->
 		
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
