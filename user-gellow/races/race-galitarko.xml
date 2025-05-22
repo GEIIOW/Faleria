@@ -66,6 +66,15 @@
 			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
 		</sheet>
 	</element>
+	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
+		<description>
+			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+
 	<element name="Galitarko Mortal Subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
 		<compendium display="false" />
 		<description>
@@ -76,15 +85,6 @@
 			<select type="Sub Race" name="Galitarko subtype" supports="Galitarko" />
 		</rules>
 	</element>
-
-	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
-		<description>
-			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
-		</description>
-		<sheet>
-			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
-		</sheet>	
-	</element>  
 	
 	<!--SUBRACE-->
 	<!--Grizzly-->
