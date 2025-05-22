@@ -118,8 +118,9 @@
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
-			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
-		</sheet>
+			<sheet>
+				<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+			</sheet>
 	</element>
 
 	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
