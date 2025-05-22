@@ -118,11 +118,11 @@
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
-			<sheet>
-				<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
-			</sheet>
-	</element>
-
+		<sheet>
+			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>	
+	</element>  
+	
 	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
