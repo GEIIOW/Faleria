@@ -119,14 +119,14 @@
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<stat name="innate speed:climb" value="30" bonus="base" />
+			<stat name="speed:climb" value="speed" />
 		</rules>
 	</element>
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
-		<sheet display="true">
+		<sheet display="false">
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>
 	</element>
@@ -134,7 +134,7 @@
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 		</description>
-		<sheet display="true">
+		<sheet display="false">
 			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
 	</element>
