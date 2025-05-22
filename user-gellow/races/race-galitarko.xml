@@ -115,7 +115,7 @@
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="true">
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
@@ -126,7 +126,7 @@
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="true">
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
 		</sheet>
 	</element>
@@ -134,7 +134,7 @@
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 		</description>
-		<sheet display="false">
+		<sheet display="true">
 			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
 	</element>
