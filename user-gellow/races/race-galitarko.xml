@@ -123,7 +123,7 @@
 		</sheet>	
 	</element>  
 
-	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
+		<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
 		<description>
 			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
 		</description>
@@ -131,12 +131,11 @@
 			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
 	</element>
-
+	
 	<element name="Languages" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_LANGUAGES">
 		<description>
 			<p>You can speak, read and write three languages of your choice.</p>
 		</description>
-		<sheet display="false" />
 		<rules>
 			<select type="Language" name="Language (Grizzly)" supports="Common" />
 			<select type="Language" name="Language (Grizzly)" supports="Common" />
