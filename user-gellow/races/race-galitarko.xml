@@ -111,6 +111,7 @@
 		</rules>
 	</element> 	
 
+	
 	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
 		<description>
 			<p>You have a climbing speed equal to your walking speed.</p>
@@ -120,7 +121,7 @@
 			<stat name="inniate speed:climb" value="speed" />
 		</rules>
 	</element>
-
+	
 	<element name="Keen Smell" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_KEEN_SMELL">
 		<description>
 			<p>You have advantage on Wisdom (Perception) checks that rely on smell.</p>
