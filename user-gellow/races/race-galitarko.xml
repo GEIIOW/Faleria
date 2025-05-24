@@ -47,6 +47,7 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
 		</rules>
 	</element>
+
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
 		<description>
 			<p>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
@@ -55,6 +56,7 @@
 			<description>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6+{{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.</description>
 		</sheet>
 	</element>
+
 	<element name="Mauling Strike" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_MAULING_STRIKE">
 		<description>
 			<p>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</p>
@@ -63,6 +65,7 @@
 			<description>Immediately after you move at least 20 feet, you can make one melee attack with your claws as a bonus action.</description>
 		</sheet>
 	</element>
+
 	<element name="Bearable" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE">
 		<description>
 			<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
@@ -71,6 +74,7 @@
 			<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
 		</sheet>
 	</element>
+
 	<element name="Galitarko Mortal Subtype" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE">
 		<description>
 			<p>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
@@ -90,24 +94,14 @@
 			unlike any other. Though they might seem brutish, many carry the philosophy of Lendo, 
 			that teaches you to always try to work for the greater good. In the case of the galitarko on the western side of Zeiloryn, 
 			that meant joining the empire and it’s conquest. Grizzly galitarko often have only one name derived from an adjective given while they were young, such as Fasten, Hungrial, Madden and Swiffy.</p>
-			
-			<span class="feature">Ability Score Increase.</span>
-				Your Wisdom score increases by 1.
-			<br/>
-			<span class="feature">High Climber.</span>
-				You have a climbing speed equal to your walking speed.
-			<br/>
-			<span class="feature">Keen Smell.</span>
-				You have advantage on Wisdom (Perception) checks that rely on smell.
-			<br/>
-			<span class="feature">Bearware.</span>
-				 It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.
-			<br/>
-			<span class="feature">Languages.</span>
-				 You can speak, read and write three languages of your choice.
-			<br/>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+			<p class="indent"><strong><em>High Climber.</em></strong> You have a climbing speed equal to your walking speed.</p>
+			<p class="indent"><strong><em>Keen Smell.</em></strong> You have advantage on Wisdom (Perception) checks that rely on smell.</p>
+			<p class="indent"><strong><em>Bearware.</em></strong> It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
 		</description>
 		<sheet display="false" />
+		
 		<rules>
 			<stat name="wisdom" value="1"  />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
@@ -116,16 +110,16 @@
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
 		</rules>
 	</element> 	
-		<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
-			<description>
-				<p>You have a climbing speed equal to your walking speed.</p>
-			</description>
-			<sheet display="false" />
-		<sheet>
+
+	<element name="High Climber" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_HIGH_CLIMBER">
+		<description>
+			<p>You have a climbing speed equal to your walking speed.</p>
+		</description>
+		<sheet display="false" />
 			<description>You have a climbing speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
-			<stat name="speed:climb" value="speed" bonus="base" />
+			<stat name="inniate speed:climb" value="speed" />
 		</rules>
 	</element>
 
