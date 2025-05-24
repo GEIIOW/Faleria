@@ -116,8 +116,6 @@
 			<p>You have a climbing speed equal to your walking speed.</p>
 		</description>
 		<sheet display="false" />
-			<description>You have a climbing speed equal to your walking speed.</description>
-		</sheet>
 		<rules>
 			<stat name="inniate speed:climb" value="speed" />
 		</rules>
@@ -129,6 +127,15 @@
 		</description>
 		<sheet>
 			<description>You have advantage on Wisdom (Perception) checks that rely on smell.</description>
+		</sheet>
+	</element>
+
+	<element name="Bearware" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_BEARWARE">
+		<description>
+			<p>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</p>
+		</description>
+		<sheet>
+			<description>It takes an additional creature for you to be flanked or affected by pack tactics, or similar features.</description>
 		</sheet>
 	</element>
 
