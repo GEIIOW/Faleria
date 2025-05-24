@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Galitarko</name>
-		<update version="0.2.3">
+		<update version="0.0.1">
 			<file name="race-galitarko.xml" url="https://raw.githubusercontent.com/GEIIOW/Faleria/refs/heads/master/user-gellow/races/race-galitarko.xml" />
 		</update>
 	</info>
@@ -28,21 +28,24 @@
 			<p class="indent"><strong><em>Mortal subtype.</em></strong>Three main subtypes of galitarko populate Faleria: Grizzly, Panda and Polar Galitarko. Choose one of these subtypes.</p>
 		</description>
 		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Oulow, Gaupo, Urrobon, Abapaoa</set>
+			<set name="names" type="female">Oulow, Gaupo, Urrobon, Abapaoa</set>
+			<set name="names" type="child">Oulow, Gaupo, Urrobon, Abapaoa</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="2d10">8'</set>
+			<set name="weight" modifier="1d4">100 lb.</set>
+		</setters>
+
 		<rules>
 			<stat name="strength" value="2"/>
-			<!--ABI <select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Elf)" supports="Custom Ability Score Increase 2" requirements="!ID_UA_PSK_GRANTS_ELF_SUBRACE,ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" /> -->
 			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
-			<!-- <grant type="Vision" id="ID_VISION_DARKVISION" /> -->
-			<!-- <grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_UA20171113_SUB_RACE_GRUGACH,!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<grant type="Language" id="ID_LANGUAGE_ELVISH" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" /> -->
-			<!-- <select type="Language" name="Customized Language" supports="Custom Race Language" number="2"  requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" /> -->
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_BEARABLE" />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GALITARKO_SUBTYPE" />
 		</rules>
 	</element>
-	<!-- traits de raça-->
 	<element name="Claws" type="Racial Trait" source="Faleria" id="ID_RACIAL_TRAIT_GALITARKO_CLAWS">
 		<description>
 			<p>Your claws are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</p>
