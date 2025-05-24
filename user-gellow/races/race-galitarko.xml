@@ -101,7 +101,10 @@
 			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read and write three languages of your choice.</p>
 		</description>
 		<sheet display="false" />
-		
+		<setters>
+			<set name="height" modifier="2d10">4'6"</set>
+			<set name="weight" modifier="1d4">90 lb.</set>
+		</setters>		
 		<rules>
 			<stat name="wisdom" value="1"  />
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_HIGH_CLIMBER" />
